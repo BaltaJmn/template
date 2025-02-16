@@ -58,7 +58,3 @@ class AndroidLibraryPlugin : Plugin<Project> {
         }
     }
 }
-
-
-
-

@@ -7,14 +7,14 @@ object Config {
     }
 
     object Core {
+        const val Auth = "$baseApplicationId.core.auth"
+        const val Common = "$baseApplicationId.core.common"
         const val Data = "$baseApplicationId.core.data"
         const val Database = "$baseApplicationId.core.database"
-        const val Persistence = "$baseApplicationId.core.persistence"
-        const val Auth = "$baseApplicationId.core.auth"
+        const val Design = "$baseApplicationId.core.design"
         const val Navigation = "$baseApplicationId.core.navigation"
         const val Network = "$baseApplicationId.core.network"
-        const val Common = "$baseApplicationId.core.common"
-        const val Design = "$baseApplicationId.core.design"
+        const val Persistence = "$baseApplicationId.core.persistence"
     }
 
     object Tests {

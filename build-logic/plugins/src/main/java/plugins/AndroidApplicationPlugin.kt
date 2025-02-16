@@ -17,6 +17,7 @@ class AndroidApplicationPlugin : Plugin<Project> {
         pluginManager.apply {
             apply("com.android.application")
             apply("kotlin-android")
+            apply("com.google.gms.google-services")
         }
 
         extensions.configure<ApplicationExtension> {
@@ -61,6 +62,7 @@ class AndroidApplicationPlugin : Plugin<Project> {
             configureKotlinAndroid(this)
             configureKtlint()
             configureCompose(this)
+            configureFirebase(this)
 
             dependencies {
                 implementation(libs.koin.core)

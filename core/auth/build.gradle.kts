@@ -1,7 +1,7 @@
 plugins {
-    alias(libs.plugins.bulletjournal.android.library)
-    alias(libs.plugins.bulletjournal.android.compose.library)
-    alias(libs.plugins.bulletjournal.android.firebase.library)
+    alias(libs.plugins.template.android.library)
+    alias(libs.plugins.template.android.compose.library)
+    alias(libs.plugins.template.android.firebase.library)
 }
 
 android {

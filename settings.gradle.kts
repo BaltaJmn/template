@@ -18,6 +18,7 @@ include(
 
 //Core
 include(
+    ":core:auth",
     ":core:common",
     ":core:data",
     ":core:database",

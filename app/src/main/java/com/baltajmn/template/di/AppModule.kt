@@ -1,5 +1,6 @@
 package com.baltajmn.template.di
 
+import com.baltajmn.auth.di.AuthModule
 import com.baltajmn.data.di.DataModule
 import com.baltajmn.network.di.NetworkModule
 import com.baltajmn.template.core.common.dispatchers.DispatchersModule
@@ -14,6 +15,7 @@ val CoreModules: Module
     get() = module {
         includes(
             listOf(
+                AuthModule,
                 DataModule,
                 DatabaseModule,
                 DispatchersModule,

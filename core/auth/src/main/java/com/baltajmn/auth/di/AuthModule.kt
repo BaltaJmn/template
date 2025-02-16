@@ -1,6 +1,6 @@
 package com.baltajmn.auth.di
 
-import com.baltajmn.bulletjournal.core.auth.BuildConfig
+import com.baltajmn.template.core.auth.BuildConfig
 import com.google.firebase.FirebaseApp
 import com.google.firebase.FirebaseOptions
 import com.google.firebase.auth.FirebaseAuth
@@ -23,7 +23,7 @@ val AuthModule: Module
             FirebaseApp.initializeApp(
                 androidContext(),
                 get(named("FirebaseOptions")),
-                "Bullet Journal"
+                "Template"
             )
         }
 

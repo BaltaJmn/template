@@ -63,5 +63,3 @@ fun Project.configureCompose(commonExtension: CommonExtension<*, *, *, *, *>) {
         androidTestImplementation(libs.androidx.compose.ui.test)
     }
 }
-
-
