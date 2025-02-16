@@ -1,5 +1,5 @@
 object Config {
-    const val baseApplicationId = "com.baltajmn.flowtime"
+    const val baseApplicationId = "com.baltajmn.template"
 
     object Feature {
         const val Splash = "$baseApplicationId.features.splash"

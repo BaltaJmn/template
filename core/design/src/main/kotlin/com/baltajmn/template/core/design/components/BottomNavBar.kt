@@ -45,7 +45,7 @@ import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
-import com.baltajmn.flowtime.core.design.R
+import com.baltajmn.template.core.design.R
 import com.baltajmn.template.core.design.theme.AppTheme
 import com.baltajmn.template.core.navigation.MainGraph
 import kotlinx.coroutines.delay

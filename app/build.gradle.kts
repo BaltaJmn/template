@@ -1,10 +1,10 @@
 plugins {
-    alias(libs.plugins.flowtime.android.application)
+    alias(libs.plugins.template.android.application)
 }
 
 android {
     defaultConfig {
-        manifestPlaceholders["redirectSchemeName"] = "flowtime"
+        manifestPlaceholders["redirectSchemeName"] = "template"
         manifestPlaceholders["redirectHostName"] = "auth"
     }
 }

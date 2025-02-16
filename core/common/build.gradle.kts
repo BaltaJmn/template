@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.flowtime.android.library)
+    alias(libs.plugins.template.android.library)
 }
 
 android {

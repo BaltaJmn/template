@@ -1,6 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-group = "com.baltajmn.flowtime.buildlogic"
+group = "com.baltajmn.template.buildlogic"
 
 plugins {
     `kotlin-dsl`
@@ -20,24 +20,29 @@ tasks.withType<KotlinCompile>().configureEach {
 
 gradlePlugin {
     plugins {
-        register("flowtimeAndroidApplication") {
-            id = "flowtime.android.application"
+        register("templateAndroidApplication") {
+            id = "template.android.application"
             implementationClass = "plugins.AndroidApplicationPlugin"
         }
 
-        register("flowtimeAndroidLibrary") {
-            id = "flowtime.android.library"
+        register("templateAndroidLibrary") {
+            id = "template.android.library"
             implementationClass = "plugins.AndroidLibraryPlugin"
         }
 
-        register("flowtimeComposeLibrary") {
-            id = "flowtime.compose.library"
+        register("templateComposeLibrary") {
+            id = "template.compose.library"
             implementationClass = "plugins.ComposePlugin"
         }
 
-        register("flowtimeRoomLibrary") {
-            id = "flowtime.room.library"
+        register("templateRoomLibrary") {
+            id = "template.room.library"
             implementationClass = "plugins.AndroidRoomPlugin"
+        }
+
+        register("templateFirebaseLibrary") {
+            id = "template.firebase.library"
+            implementationClass = "plugins.AndroidFirebasePlugin"
         }
     }
 }
@@ -59,4 +64,5 @@ dependencies {
     implementation(libs.plugin.ktlint)
     implementation(libs.plugin.kotlin.serialization)
     implementation(libs.plugin.kotlin.ksp)
+    implementation(libs.firebase.google.services)
 }

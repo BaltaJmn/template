@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.baltajmn.flowtime.core.design.R
+import com.baltajmn.template.core.design.R
 
 @Composable
 fun SplashView(

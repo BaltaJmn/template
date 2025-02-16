@@ -32,6 +32,13 @@ appcompat = "1.6.1"
 material = "1.10.0"
 ksp = "1.9.20-1.0.14"
 material3 = "1.2.0-alpha11"
+firebaseCommonKtx = "20.4.2"
+firebaseRealtimeDatabaseKtx = "20.3.0"
+firebaseAuthVersion = "22.3.0"
+firebaseAuthUi = "8.0.2"
+firebaseGoogleServices = "4.4.0"
+firebaseGoogleServicesAuth = "20.7.0"
+firebase-auth = "22.3.0"
 
 [libraries]
 
@@ -95,12 +102,22 @@ core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
+firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version = "32.7.0" }
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthVersion" }
+firebase-realtime-database-ktx = { group = "com.google.firebase", name = "firebase-database-ktx", version.ref = "firebaseRealtimeDatabaseKtx" }
+firebase-auth-ui = { group = "com.firebaseui", name = "firebase-ui-auth", version.ref = "firebaseAuthUi" }
+firebase-common = { group = "com.google.firebase", name = "firebase-common-ktx", version.ref = "firebaseCommonKtx" }
+firebase-google-services = { group = "com.google.gms", name = "google-services", version.ref = "firebaseGoogleServices" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebase-auth" }
+
 [plugins]
 
-flowtime-android-application = { id = "flowtime.android.application", version = "unspecified" }
-flowtime-android-library = { id = "flowtime.android.library", version = "unspecified" }
-flowtime-android-compose-library = { id = "flowtime.compose.library", version = "unspecified" }
-flowtime-android-room-library = { id = "flowtime.room.library", version = "unspecified" }
+template-android-application = { id = "template.android.application", version = "unspecified" }
+template-android-library = { id = "template.android.library", version = "unspecified" }
+template-android-compose-library = { id = "template.compose.library", version = "unspecified" }
+template-android-room-library = { id = "template.room.library", version = "unspecified" }
+template-android-firebase-library = { id = "template.firebase.library", version = "unspecified" }
+template-goolge-services = { id = "com.google.gms.google-services", version = "unspecified" }
 
 [bundles]
 
