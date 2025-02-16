@@ -19,8 +19,10 @@ include(
 //Core
 include(
     ":core:common",
+    ":core:data",
     ":core:design",
     ":core:navigation",
+    ":core:network",
     ":core:persistence",
 )
 
