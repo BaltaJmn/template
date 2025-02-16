@@ -20,6 +20,7 @@ include(
 include(
     ":core:common",
     ":core:data",
+    ":core:database",
     ":core:design",
     ":core:navigation",
     ":core:network",
