@@ -16,12 +16,11 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color.Companion.White
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.baltajmn.template.core.design.theme.SmallTitle
-import com.baltajmn.template.core.design.theme.AppTheme
-import com.baltajmn.template.core.design.theme.White
+import com.baltajmn.template.core.design.ui.theme.AppTheme
 
 @Composable
 fun ButtonDefault(
@@ -45,7 +44,6 @@ fun ButtonDefault(
         ) {
             Text(
                 text = text,
-                style = SmallTitle,
                 color = MaterialTheme.colorScheme.onBackground
             )
 

@@ -46,7 +46,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import com.baltajmn.template.core.design.R
-import com.baltajmn.template.core.design.theme.AppTheme
+import com.baltajmn.template.core.design.ui.theme.AppTheme
 import com.baltajmn.template.core.navigation.MainGraph
 import kotlinx.coroutines.delay
 import kotlin.math.roundToInt
@@ -211,7 +211,7 @@ fun BottomNavBarPreview() {
 }
 
 enum class BottomNavBarItem(val icon: Int) {
-    Home(icon = R.drawable.ic_flowtime);
+    Home(icon = R.drawable.ic_home);
 
     fun getScreenRoute() = when (this) {
         Home -> MainGraph.Home.route

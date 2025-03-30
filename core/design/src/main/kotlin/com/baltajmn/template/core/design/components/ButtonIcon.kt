@@ -7,7 +7,6 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Button
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -17,10 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.baltajmn.template.core.design.theme.Button
-import com.baltajmn.template.core.design.theme.AppTheme
-import com.baltajmn.template.core.design.theme.Mint
-import com.baltajmn.template.core.design.theme.White
+import com.baltajmn.template.core.design.ui.theme.AppTheme
 
 @Composable
 fun ButtonIcon(
@@ -31,10 +27,6 @@ fun ButtonIcon(
 ) {
     Button(
         modifier = modifier,
-        colors = ButtonDefaults.buttonColors(
-            containerColor = Mint,
-            contentColor = White
-        ),
         shape = RoundedCornerShape(33),
         onClick = onClick,
         contentPadding = PaddingValues(10.dp)
@@ -44,7 +36,6 @@ fun ButtonIcon(
         ) {
             Text(
                 text = text,
-                style = Button,
                 color = MaterialTheme.colorScheme.onBackground
             )
             Icon(

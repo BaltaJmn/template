@@ -22,7 +22,7 @@ class ComposePlugin : Plugin<Project> {
 
 fun Project.configureCompose(commonExtension: CommonExtension<*, *, *, *, *, *>) {
     plugins.apply("org.jetbrains.kotlin.plugin.compose")
-    
+
     commonExtension.apply {
         buildFeatures {
             compose = true

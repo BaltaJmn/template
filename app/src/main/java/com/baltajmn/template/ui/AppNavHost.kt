@@ -8,7 +8,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.platform.LocalConfiguration
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -45,8 +44,6 @@ fun NavGraphBuilder.preMainNavGraph(
 fun MainNavGraph(
     appState: AppState
 ) {
-    val configuration = LocalConfiguration.current
-
     var screenRoute by remember { mutableStateOf(BottomNavBarItem.Home) }
     val currentRoute = appState.currentRoute
 
