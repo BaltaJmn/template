@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.template.android.application)
+    alias(libs.plugins.template.kotlin.plugin.compose) apply false
 }
 
 android {

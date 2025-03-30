@@ -20,7 +20,9 @@ class ComposePlugin : Plugin<Project> {
     }
 }
 
-fun Project.configureCompose(commonExtension: CommonExtension<*, *, *, *, *>) {
+fun Project.configureCompose(commonExtension: CommonExtension<*, *, *, *, *, *>) {
+    plugins.apply("org.jetbrains.kotlin.plugin.compose")
+    
     commonExtension.apply {
         buildFeatures {
             compose = true
@@ -33,7 +35,7 @@ fun Project.configureCompose(commonExtension: CommonExtension<*, *, *, *, *>) {
 
     dependencies {
         implementation(project(":core:navigation"))
-        if(project.name != "design") {
+        if (project.name != "design") {
             implementation(project(":core:design"))
         }
         implementationBom(platform(libs.androidx.compose.bom))

@@ -17,9 +17,10 @@ class AndroidFirebasePlugin : Plugin<Project> {
     }
 }
 
-fun Project.configureFirebase(commonExtension: CommonExtension<*, *, *, *, *>) {
+fun Project.configureFirebase(commonExtension: CommonExtension<*, *, *, *, *, *>) {
     pluginManager.apply {
         apply("com.google.gms.google-services")
+        apply("org.jetbrains.kotlin.plugin.compose")
     }
 
     dependencies {

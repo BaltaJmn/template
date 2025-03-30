@@ -18,6 +18,7 @@ class AndroidApplicationPlugin : Plugin<Project> {
             apply("com.android.application")
             apply("kotlin-android")
             apply("com.google.gms.google-services")
+            apply("org.jetbrains.kotlin.plugin.compose")
         }
 
         extensions.configure<ApplicationExtension> {
